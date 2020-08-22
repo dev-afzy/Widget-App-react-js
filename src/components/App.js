@@ -4,6 +4,7 @@ import Search from './Search';
 import Transition from './Translate';
 import Dropdown from './Dropdown';
 import Route from './Route';
+import Header from './Header';
 
 const items = [
   { title: 'afees', content: 'developer' },
@@ -30,6 +31,7 @@ export default () => {
   const [selected, setSelected] = useState(options[0]);
   return (
     <div>
+      <Header />
       <Route path="/">
         <Accordian items={items} />
       </Route>
